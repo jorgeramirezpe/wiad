@@ -1,0 +1,394 @@
+body,
+html{
+	background-color: #ededed;
+	font-size: 16px;
+}
+
+::-webkit-scrollbar {
+    width: 0.5em;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+.row .col{
+	/*outline: 1px solid #999999;*/
+}
+/*Clases generales*/
+
+/*Cabecera*/
+header{
+  background-color: rgba(255,255,255,1);
+  overflow: hidden;
+}
+header nav{
+  background-color: rgba(255,255,255,1);
+  box-shadow: none;
+}
+header .row{
+  margin-bottom: 0;
+}
+header nav .brand-logo{}
+header nav .brand-logo img{}
+header nav ul#nav-mobile{}
+header nav ul#nav-mobile li{}
+header nav ul#nav-mobile li a{
+  text-transform: uppercase;
+  color: rgba(99,99,99,1);
+  font-size: 14px;
+  box-shadow: inset 0px -3px 0px 0px rgba(99,99,99,0);
+}
+header nav ul#nav-mobile li a:last-child{
+  border-bottom: none;
+}
+header nav ul#nav-mobile li a.active,
+header nav ul#nav-mobile li a:hover{
+  color: rgba(99,99,99,0.8);
+  box-shadow: inset 0px -3px 0px 0px rgba(99,99,99,1);
+  background-color: transparent;
+}
+
+.button-collapse{
+  color: rgba(15,113,188,1);
+}
+
+/*Sección principal*/
+.main-section{
+  text-align: center;
+  color: #ffffff;
+  background-image: url(../img/bg-header.jpg);
+  padding: 2.5em 0;
+}
+.main-section img{}
+.main-section h2{
+  font-size: 64px;
+}
+.main-section h1{
+  font-size: 36px;
+  text-transform: uppercase;
+}
+.main-section .contador{
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(255,255,255,1)
+}
+.main-section .contador span{
+  display: inline-block;
+  padding: 0 2em;
+}
+.main-section .contador span h2{
+  margin-bottom: 0em;
+}
+.main-section .contador span p{
+  margin-top: 0em;
+  font-weight: 100;
+}
+
+/*Contador*/
+.main-section .contador{}
+
+/*Qué es el WIAD*/
+.about{
+  padding: 3.5em 0;
+  color: rgba(99,99,99,1);
+  background-image: url(../img/bg-about.png); 
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.about h2{
+  font-size: 36px;
+}
+.about h3{
+  font-size: 48px;
+}
+.about h4{
+  font-size: 28px;
+}
+.about p{
+  font-size: 24px;
+  font-weight: 100;
+}
+
+/*Fotos*/
+.fotos{}
+.fotos .box-pic-wiad{
+  display: inline-block;
+  width: 20%;
+  margin-left: -2px;
+  margin-right: -2px;
+  overflow: hidden;
+  margin-top: -6px;
+}
+.fotos .box-pic-wiad span{}
+.fotos .box-pic-wiad span img{
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+  transition: all 0.3 ease-in-out;
+}
+.fotos .box-pic-wiad span:hover img{
+  /*transform: scale(2);*/
+}
+.fotos .box-pic-wiad span:hover img{}
+
+/*Conoce la experiencia y videos*/
+.experience-wiad{}
+.experience-wiad h3{
+  color:#636362;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 200;
+}
+.experience-wiad .section-videos{
+  background-color: black;
+}
+.experience-wiad .section-videos iframe{
+}
+
+.experience-wiad .section-list-videos .multiple-videos{}
+.experience-wiad .section-list-videos .multiple-videos div{}
+.experience-wiad .section-list-videos .multiple-videos iframe{}
+
+/*Tweets*/
+.social-tweets{
+  background-color: #0072BC;
+  text-align: center;
+}
+.btn-tweets{
+  padding: 1em 0;
+}
+.btn-tweets a{
+  display: inline-block;
+  color: rgba(0,114,188,1)!important;
+  background-color: rgba(255,255,255,1)!important;
+  border-radius: 18px;
+  padding: 3px 30px 0px;
+  line-height: 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+.btn-tweets a:hover {
+  color: rgba(0,114,188,1)!important;
+  background-color: rgba(255,255,255,0.8)!important;
+  border-bottom: none!important;
+  box-shadow: inset 0px -3px 0px 0px rgba(99,99,99,0)!important;
+}
+
+.social-tweets a.main-tweet,
+.social-tweets h3{
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 200;
+}
+
+/*Sponsor*/
+
+.sponsor{
+  text-align: center;
+}
+.sponsor h3,
+.sponsor h4{
+  color:#0072BC;
+  font-size: 36px;
+}
+.sponsor h3{
+  font-weight: 300; 
+}
+.sponsor h4{
+  font-weight: 400;
+}
+.sponsor .box-sponsor{
+  box-shadow:0 0 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
+}
+.sponsor .box-sponsor:hover{
+  box-shadow:0 0 15px rgba(0,0,0,0.5);
+}
+.sponsor .box-sponsor.level1{
+  width: 90%;
+  margin:1em auto;
+  padding-bottom: 0.5em;
+}
+.sponsor .box-sponsor.level2{
+  margin: 0.3em auto;
+  width: 100%;
+  padding-bottom: 0.5em;
+}
+
+.sponsor .box-sponsor .box-title-sponsor{
+  background-color: rgba(0,114,188,1);
+  color: rgba(255,255,255,1);
+  margin: 0;
+  padding: 0.5em 0;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 300;
+}
+.sponsor .box-sponsor .box-img-sponsor{
+  background-color:rgba(0,114,188,0.8);
+  overflow: hidden;
+  position: relative;
+}
+.sponsor .box-sponsor .box-img-sponsor img{
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+.sponsor .box-sponsor .box-list-sponsor{}
+.sponsor .box-sponsor .box-list-sponsor ul{
+  margin: 0;
+  padding: 0;
+}
+.sponsor .box-sponsor .box-list-sponsor ul li{
+  padding: 0.6em; 
+}
+.sponsor .box-sponsor .box-list-sponsor ul li:nth-child(even) {
+  background: rgba(210,210,210,0.2);
+}
+.sponsor .box-sponsor .box-list-sponsor ul li:nth-child(odd) {
+  background: rgba(210,210,210,1);
+}
+.sponsor .box-sponsor .box-list-sponsor ul li a{}
+
+.btn-sponsor-base a{
+  display: inline-block;
+  border-radius: 28px;
+  padding: 12px 40px 0px;
+  height: 48px;
+  line-height: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid rgba(0,114,188,1);
+  transition: all 0.3s ease-in-out;
+}
+.btn-sponsor-blue a{
+  background-color: rgba(0,114,188,1);
+  color: rgba(255,255,255,1);
+}
+.btn-sponsor-blue a:hover{
+  background-color: rgba(0,114,188,0.8);
+  color: rgba(255,255,255,0.8);
+}
+.btn-sponsor-white a{
+  color: rgba(0,114,188,1);
+  background-color: rgba(255,255,255,1);
+}
+.btn-sponsor-white a:hover{
+  color: rgba(0,114,188,0.8);
+  background-color: rgba(255,255,255,0.8);
+}
+
+.box-btn{
+  display: inline-block;
+}
+.box-btn a{
+  display: inline-block;
+  background-color: rgba(0,114,188,1);
+  color: rgba(255,255,255,1)!important;
+  border-radius: 18px;
+  padding: 3px 30px 0px;
+  line-height: 30px;
+}
+.box-btn a:hover{
+  background-color: rgba(0,114,188,0.8)!important;
+  color: rgba(255,255,255,1)!important;
+  border-bottom: none!important;
+  box-shadow: inset 0px -3px 0px 0px rgba(99,99,99,0)!important;
+}
+
+/*Info WIAD*/
+.info-wiad{
+  padding: 1em 0;
+  background-color: rgba(0,114,188,1);
+  color: #ffffff;
+  text-align: center;
+}
+.info-wiad .row{
+  margin-bottom: 0;
+}
+/*Footer*/
+footer{
+  background-color: rgba(0,114,188,1);
+  text-align: center;
+  color: #ffffff;
+  padding: 1em 0;
+}
+footer .row{
+  margin-bottom: 0;
+}
+footer span{}
+footer span a{
+  background-color: #ffffff;
+  color: rgba(0,114,188,1);
+  padding:3px 30px;
+  border-radius: 18px;
+  margin: 0 1em;
+}
+
+
+/*Top*/
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(65, 64, 96, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #414060;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+	height: 50px;
+    width: 50px;
+    right: 10px;
+    bottom: 50px;
+  }
+}
